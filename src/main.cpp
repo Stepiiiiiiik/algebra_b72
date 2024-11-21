@@ -98,10 +98,10 @@ int main() {
   }
 
   int d = 0;
-  for (int i = 0; i < 8; ++i) {
-    for (int j = 0; j < 6; ++j) {
-      for (int k = 0; k < 8; ++k) {
-        for (int l = 0; l < 8; ++l) {
+  for (int i = 0; i < y0.size(); ++i) {
+    for (int j = 0; j < y1.size(); ++j) {
+      for (int k = 0; k < y2.size(); ++k) {
+        for (int l = 0; l < y3.size(); ++l) {
           vector<int> a;
           vector<int> coeffs;
           a.push_back(y0[i]);
@@ -130,6 +130,7 @@ int main() {
             if (isZaebis) {
               printf("\x1b[32m%d) y0: %d; y1: %d; y2: %d; y3: %d\x1b[0m\n", d,
                      y0[i], y1[j], y2[k], y3[l]);
+                     break;
             } else {
               printf("%d) y0: %d; y1: %d; y2: %d; y3: %d\n", d, y0[i], y1[j],
                      y2[k], y3[l]);
