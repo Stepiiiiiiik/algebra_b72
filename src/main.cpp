@@ -27,7 +27,7 @@ int main() {
   cout << endl;
   vector<int> polynom;
   for (int i = 0; i < 8; ++i) {
-    printf("Ввелите коэффициент при x в степени %d: ", i);
+    printf("Введите коэффициент при x в степени %d: ", i);
     int k;
     cin >> k;
     cout << endl;
@@ -90,7 +90,7 @@ int main() {
           "вольфрам\n\n";
   vector<int> wPolynom;
   for (int i = 0; i < 4; ++i) {
-    printf("Ввелите коэффициент при x в степени %d: ", i);
+    printf("Введите коэффициент при x в степени %d: ", i);
     int k;
     cin >> k;
     wPolynom.push_back(k);
