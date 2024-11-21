@@ -48,6 +48,8 @@ int main() {
     cin >> k;
     x.push_back(k);
   }
+
+  cout << "\n\n";
   vector<int> y0;
   vector<int> y1;
   vector<int> y2;
@@ -81,16 +83,18 @@ int main() {
     }
   }
 
+  cout << "Подходящая комбинация будет выделена \x1b[32mзеленым\x1b[0m цветом "
+       << "\n\n";
   vector<int> wPolynome;
   cout << "Теперь введите коэффициенты многочлена, который вам выдал "
-          "вольфрам\n";
+          "вольфрам\n\n";
   vector<int> wPolynom;
   for (int i = 0; i < 4; ++i) {
     printf("Ввелите коэффициент при x в степени %d: ", i);
     int k;
     cin >> k;
-    cout << "\n" << endl;
     wPolynom.push_back(k);
+    cout << "\n" << "\n";
   }
 
   int d = 0;
@@ -113,9 +117,9 @@ int main() {
           coeffs.push_back(a[3]);
 
           if ((y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) % 6 == 0 &&
-              (y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) <= 24 &&
+              (y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) <= polynom[7] * 6 &&
               ((y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) != 0 &&
-               24 % (y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) == 0)) {
+               (polynom[7] * 6) % (y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) == 0)) {
             d++;
             bool isZaebis = true;
             for (int i = 0; i < 4; ++i) {
