@@ -130,7 +130,6 @@ int main() {
             if (isZaebis) {
               printf("\x1b[32m%d) y0: %d; y1: %d; y2: %d; y3: %d\x1b[0m\n", d,
                      y0[i], y1[j], y2[k], y3[l]);
-                     break;
             } else {
               printf("%d) y0: %d; y1: %d; y2: %d; y3: %d\n", d, y0[i], y1[j],
                      y2[k], y3[l]);
