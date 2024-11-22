@@ -94,7 +94,8 @@ int main() {
     int k;
     cin >> k;
     wPolynom.push_back(k);
-    cout << "\n" << "\n";
+    cout << "\n"
+         << "\n";
   }
 
   int d = 0;
@@ -119,7 +120,8 @@ int main() {
           if ((y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) % 6 == 0 &&
               (y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) <= polynom[7] * 6 &&
               ((y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) != 0 &&
-               (polynom[7] * 6) % (y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) == 0)) {
+               (polynom[7] * 6) % (y3[l] - 3 * y2[k] + 3 * y1[j] - y0[i]) ==
+                   0)) {
             d++;
             bool isZaebis = true;
             for (int i = 0; i < 4; ++i) {
